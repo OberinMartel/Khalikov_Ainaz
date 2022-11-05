@@ -1,0 +1,27 @@
+﻿<Page x:Class="PerfumeShop.Pages.RegistrationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PerfumeShop.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RegistrationPage">
+
+    <StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock>Логин:</TextBlock>
+            <TextBox Width="250" x:Name="TBLogin"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock>Пароль:</TextBlock>
+            <TextBox Width="250" x:Name="TBPassword"></TextBox>
+        </StackPanel>
+        <Button x:Name="Autorization" Click="Autorization_Click">Авторизация</Button>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock>ФИО:</TextBlock>
+            <TextBox Width="250"></TextBox>
+        </StackPanel>
+        <Button x:Name="Registration" Click="Registration_Click">Регистрация</Button>
+    </StackPanel>
+</Page>
